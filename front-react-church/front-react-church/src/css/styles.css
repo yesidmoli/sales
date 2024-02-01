@@ -1,0 +1,713 @@
+:root {
+    --global-color: #ffdb15; 
+    --global-otro: rgb(254, 215, 77);
+    --global-azul: #012E40;
+  }
+
+body{
+    display: grid;
+    
+}
+header{
+    background-color: var(--global-color);
+    width: 100%;
+    height: 4.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+/* components */
+
+.circulo-devolver{
+    width: 3.0625rem;
+    height: 2.875rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+.input-fecha{
+    width: 12rem;
+    height: 3.8125rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none; 
+    padding: 5px;
+    display: flex;
+    margin: 3px;
+    
+}
+.registros-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+
+}
+.registros-info .nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.btn-pagada{
+    width: 5.625rem;
+    height: 2.9375rem;
+    border-radius: 0.625rem 0px 0px 0.625rem ;
+    background: #17B25E;
+    border: none;
+    color: white;
+}
+.btn-credito{
+    width: 5.625rem;
+    height: 2.9375rem;
+    border-radius: 0px 0.625rem   0.625rem  0px ;
+    background: white;
+    border: none;
+}
+
+.required {
+    color: red; 
+    margin-left: 3px; 
+}
+
+.input-global{
+    width: 100%;
+    height: 3.875rem; 
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none; 
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+.form-registros{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+    
+}
+.client-escoge{
+    display: flex;
+    align-items: center;
+}
+
+.input-cliente{
+    height: 3rem;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+.title-center{
+    margin-left: 3.6rem;
+}
+
+
+.btn-accesos{
+    width: 10rem;
+    height: 10rem;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 1.25rem;
+    background: var(--global-azul);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+    color: white;
+}
+.btn-2{
+    background-color: white;
+    color: #000;
+}
+.btn-success{
+    height: 3rem;
+}
+.container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25rem;
+    
+   
+   
+}
+.contenedor-accesos{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.btn-a{
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    height: 4.9375rem;
+    background: var(--global-azul);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input-document{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.btn-seleccionado-credito {
+    background-color: red; 
+    color: white; 
+  }
+.btn-seleccionado-pagado{
+    background-color:#17B25E ;
+    color: white;
+}
+
+
+/* Interfaces balance */
+
+.resumen-venta{
+    width: 50∞;
+    height: 11rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    
+}
+
+.total-venta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-venta .cantida{
+    color: #198754;
+}
+
+.resumen-venta section{
+    display: flex;
+    
+}
+.total-venta-titulo{
+    display: flex;
+    gap: 10px;
+}
+.ingre-deben{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ingre-deben .contenido{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* venta seleccion */
+.select-venta{
+    width: 100%;
+    background-color: var(--global-color);
+    height: 4rem;
+    border-top: 1px solid #00000027;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+   
+   
+}
+.cont{
+    margin-top: 10px;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.2rem;
+}
+
+.btn-ingresos{
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.btn-deben{
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.btn-ingresos:hover{
+    border-bottom: 6px solid #198754;
+}
+.btn-deben:hover{
+    border-bottom: 6px solid red;
+}
+
+.info-producto{
+    height: rem;
+    display: flex;
+    margin-bottom: 2px;
+    padding: 5px;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.list-productos{
+    overflow: scroll;
+    height: 18rem;
+}
+
+.sin-margen{
+    margin: 0px;
+}
+.fecha{
+    font-size: 12px;
+}
+.precio-estado{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.select-react{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-react .select{
+    width: 100%;
+    outline: none !important;
+}
+
+.datos-venta{
+    width: 50%;
+}
+
+/* deudas */
+.datos-deuda{
+    width: 100%;
+    height: 10rem;
+    background-color: var(--global-color);
+    display: flex;
+    justify-content: center;
+}
+
+.info-deuda{
+    width: 50%;
+    height: 8rem;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 10px solid #17B25E;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    align-items: center;
+
+}
+.item-deuda{
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+
+}
+.list-deudas{
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    width: 100%;
+    overflow: scroll;
+    height: 23rem;
+}
+.item-deuda-valor{
+    width: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.item-deudas-info{
+    width: 75%;
+    margin-left: 5px;
+}
+.item-link{
+    text-decoration: none;
+    color: #000
+}
+
+.toast-personalizado{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.hh{
+  height: 3.5rem;
+  width: 100%;
+}
+
+/* list clients */
+
+.item-client{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.item-total{
+    display: flex;
+    justify-content: space-around;
+}
+.total-client{
+    height: 6rem;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+.list-total-clients{
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    width: 100%;
+    overflow: scroll;
+    height: 25rem;
+}
+.total-client h4{
+    color:  rgba(0, 0, 0, 0.50);
+}
+
+/* detalle cliente */
+.container-sm{
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem !important;
+  
+
+}
+.container-sm .h3{
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.30);
+    padding-bottom: 12px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0px;
+}
+.container-sm h4{
+    border-bottom: none !important;
+}
+.detalle-deuda{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.btn-registrar-abono{
+    border-radius: 1.25rem;
+    background: #31A31F;
+    width: 100%;
+    height: 2.25rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+.cont-detalle-deuda{
+    display: flex;
+    flex-direction: column;
+}
+.btn-recordatorio{
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+   
+}
+.p-total{
+    color: #31A31F;
+}
+.btns-section{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-detalle-cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.detalle-cliente{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 10px;
+}
+.ventas-cobrar{
+    padding: 15px !important;
+}
+.no-deudas{
+    width: 100%;
+    height: 4.625rem;
+    border-radius: 0.9375rem;
+    background: rgba(35, 123, 167, 0.50);
+    color: #1C274C;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem
+}
+.no-deudas p{
+ margin: 0px;
+}
+.crear-cliente{
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.login{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: var(--global-color);
+}
+.login .conten{
+    background-color: #FFF;
+    padding: 3rem;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.login .conten h1{
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+/* Media query para pantallas más anchas que 600px */
+@media screen and (min-width: 600px) {
+    body {
+      font-size: 20px;
+    }
+    /* .inicio{
+        margin-top: 11em;
+    } */
+  }
+
+  @media screen and (max-width: 767px) {
+   
+   .input-fecha{
+    width: 9rem;
+    margin-left: 10px;
+
+   }
+   .btn-success{
+    margin-top: 3rem;
+}
+    .resumen-venta{
+    
+        height: 10rem;
+    }
+    /* .inicio{
+        margin-top: 7em;
+    } */
+    .datos-deuda{
+        height: 6.5rem;
+    }
+    .info-deuda{
+        width: 10rem;
+        padding: 10px;
+        height: 6rem;
+       
+    }
+    .info-deuda p{
+        margin: 0px;
+    }
+    header{
+        height: 3.5rem;
+    }
+    .circulo-devolver{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 10px;
+    }
+    
+  }
+  
+/* Dispositivos móviles */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* .inicio{
+        margin-top: 5em;
+    } */
+   
+  }
+  
+  
+
+
+  @media only screen and (max-width: 412px) and (max-height: 915px) {
+.container{
+    margin-bottom: 15rem;
+
+}
+  }
+  .list-productos{
+    height: 23rem;
+  }
+  @media only screen and (max-width: 360px) and (max-height: 740px) {
+    .container{
+        margin-bottom: 7rem;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) and (max-height: 667px) {
+    .list-deudas{
+        height: 18rem;
+    }
+    .deuda{
+        margin-top: 0px;
+    }
+    .container{
+        margin-bottom: 5rem;
+    }
+  }
+  
+  /* iPads, tablets */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para iPads y tablets */
+  }
+  
+  /* Pantallas pequeñas, ordenadores portátiles */
+  @media only screen and (min-width: 430px) and (max-width: 932px) {
+    /* .inicio{
+        margin-top:20em ;
+    } */
+    
+  }
+  
+  /* Pantallas grandes, ordenadores de escritorio */
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* .inicio{
+        margin-top:30em ;
+    } */
+  }
+  
+
+  @media screen and (max-width: 667px) and (orientation: portrait) {
+    .inicio{
+       margin-top: 1rem;
+    }
+    .balance{
+        margin-top: 0px;
+    }
+    .list-productos{
+        height: 18rem;
+    }
+    .resumen-venta{
+       padding: 10px;
+    }
+    .clientes{
+        margin-top: 2rem;
+    }
+    .crear-cliente{
+        margin-top: 0px;
+    }
+    .list-total-clients{
+        height: 20rem;
+    }
+    .item-deuda-2{
+        height: 4rem;
+    }
+    .list-total-clients{
+        margin-top: 0px;
+    }
+  }
+  @media screen and (height: 896px) and (orientation: portrait) {
+    .inicio{
+        margin-top: 20rem;
+    }
+    .balance{
+        margin-top: 18rem;
+    }
+    .list-productos{
+        height: 30rem;
+    }
+    .deuda{
+       
+    }
+    .list-deudas{
+        height: 30rem;
+    }
+    .clientes{
+
+    }
+    .list-total-clients{
+        height: 33rem;
+    }
+    
+  }
+  @media (max-height: 163.5px) {
+    .inicio{
+        background-color: #17B25E;
+    }
+  }
+  
