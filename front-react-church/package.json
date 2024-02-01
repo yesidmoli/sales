@@ -2,7 +2,7 @@
   "name": "front-react-church",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yesidmoli.github.io/sales/",
+  "homepage": "https://yesidmoli.github.io/sales.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
